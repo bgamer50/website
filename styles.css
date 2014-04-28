@@ -1,0 +1,23 @@
+p {
+	font-family:"Helvetica";
+	font-size:13px;
+	background-color:#d0e4fe;
+	width:10%;
+	}
+h1 {
+	font-family:"Helvetica";
+	font-size:20px;
+}
+table.main {
+	font-family:"Helvetica";
+	border-collapse: separate;
+	border-spacing: 1em 0.5em;
+	background-color: #d0e4fe;
+	text-align:center;
+}
+table.main tr th thead {
+	font-size:16px;
+}
+table.main tr td tbody {
+	font-size:14px;
+}
