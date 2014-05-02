@@ -1,23 +1,106 @@
-p {
-	font-family:"Helvetica";
-	font-size:13px;
-	background-color:#d0e4fe;
-	width:10%;
-	}
-h1 {
-	font-family:"Helvetica";
-	font-size:20px;
+html {
+	height:100%;
+	width:100%;
 }
-table.main {
+body {
+	height:97%;
+	width:99%;
+	background-color:#addbce;
+}
+p {
+	font-family:"MS Sans Serif";
+	font-size:13px;
+	width:100%;
+	height:75%;
+	}
+lbar {
 	font-family:"Helvetica";
-	border-collapse: separate;
-	border-spacing: 1em 0.5em;
+	font-size:15px;
+	width:100%;
 	background-color: #d0e4fe;
+	border: 2px solid gray;
+}
+t {
+	font-family:"Helvetica";
+	font-size:24px;
+	padding:0 2em;
+	margin-top:auto;
+	margin-bottom:auto;
+	vertical-align:center;
+}
+ft {
+	font-family:"Helvetica";
+	border: 2px solid gray;
+	padding:1em;
+	width:90%;
+	background-color: #d0e4fe;
+	margin-top:auto;
+	margin-bottom:auto;
+	vertical-align:top;
+	margin-left:auto;
+	margin-right:auto;
 	text-align:center;
 }
-table.main tr th thead {
-	font-size:16px;
+a {
+	vertical-align:top;
 }
-table.main tr td tbody {
-	font-size:14px;
+.ribbon {
+	display:inline-block;
+}
+.ribbon:after, .ribbon:before {
+	margin-top:0.5em;
+	content: "";
+	float:left;
+	border:1.5em solid #d0e4fe;
+}
+.ribbon:after {
+	border-right-color:transparent;
+}
+.ribbon:before {
+	border-left-color:transparent;
+}
+.ribbon a:link, .ribbon a:visited { 
+	color:#000;
+	text-decoration:none;
+	float:left;
+	height:3.5em;
+	overflow:hidden;
+}
+.ribbon span {
+    background:#d0e4fe;
+    display:inline-block;
+    line-height:3em;
+    padding:0 5em;
+    width:100%;
+    margin-top:0.5em;
+    position:relative;
+
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;  /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;  /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;  /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;  /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background:#FFD204;
+    margin-top:0;
+}
+
+.ribbon span:before {
+    content: "";
+    position:absolute;
+    top:3em;
+    left:0;
+    border-right:0.5em solid #9B8651;
+    border-bottom:0.5em solid #d0e4fe;
+}
+
+.ribbon span:after {
+    content: "";
+    position:absolute;
+    top:3em;
+    right:0;
+    border-left:0.5em solid #9B8651;
+    border-bottom:0.5em solid #d0e4fe;
 }
