@@ -17,9 +17,12 @@ body {
 p {
 	font-family: "Roboto Slab", serif;
 	font-size:15px;
+	text-indent:10px;
 	height:75%;
 	margin-left: 10%;
 	margin-right: 10%;
+	border: 0.2em solid #000000;
+	background-color:#d0e4fe;
 }
 h {
 	font-family: "Roboto Slab", serif;
