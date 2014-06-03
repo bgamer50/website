@@ -22,6 +22,10 @@ p {
 	margin-left: 10%;
 	margin-right: 10%;
 	border: 0.2em solid #000000;
+	padding-right:10px;
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
 	background-color:#c1cc3c;
 }
 h {
