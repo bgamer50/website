@@ -10,7 +10,7 @@ html {
 body {
 	height:100%;
 	width:100%;
-	background-color:#addbce;
+	background-color:#87be37;
 	margin:0;
 	padding:0;
 }
@@ -22,7 +22,7 @@ p {
 	margin-left: 10%;
 	margin-right: 10%;
 	border: 0.2em solid #000000;
-	background-color:#d0e4fe;
+	background-color:#c1cc3c;
 }
 h {
 	font-family: "Roboto Slab", serif;
@@ -41,10 +41,10 @@ t {
 }
 ft {
 	font-family:"Helvetica";
-	border: 2px solid gray;
+	border: 2px solid black;
 	width:100%;
 	width:calc(100% - 4px);
-	background-color: #d0e4fe;
+	background-color: #2d994d;
 	text-align:center;
 	position:absolute;
 	bottom: 0.0;
@@ -57,7 +57,7 @@ ft {
 	margin-top:0.5em;
 	content: "";
 	float:left;
-	border:1.5em solid #d0e4fe;
+	border:1.5em solid #2d994d;
 }
 .ribbon:after {
 	border-right-color:transparent;
@@ -78,7 +78,7 @@ ft {
 	margin-bottom: 30px;
 }
 .ribbon span {
-    background:#d0e4fe;
+    background:#2d994d;
     display:inline-block;
     line-height:3em;
     padding:0 5em;
@@ -94,7 +94,7 @@ ft {
 }
 
 .ribbon a:hover span {
-    background:#FFD204;
+    background:#c1cc3c;
     margin-top:0;
 }
 
@@ -104,7 +104,7 @@ ft {
     top:3em;
     left:0em;
     border-right:0.5em solid #9B8651;
-    border-bottom:0.5em solid #d0e4fe;
+    border-bottom:0.5em solid #2d994d;
 }
 
 .ribbon span:after {
