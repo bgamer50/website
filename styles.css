@@ -11,6 +11,9 @@ body {
 	height:100%;
 	width:100%;
 	background-color:#e2ba6e;
+    background-image:url("bg.jpg");
+    background-position:top;
+    background-repeat:no-repeat;
 	margin:0;
 	padding:0;
 }
@@ -26,6 +29,7 @@ p {
 	padding-top:5px;
 	padding-bottom:20px;
 	background-color:#e2ba7f;
+    background:rgba(226,186,127,0.7);   
 }
 h {
 	font-family: "Bitter", serif;
