@@ -1,6 +1,6 @@
 html {
-	height:100%;
-	width:99%;
+	height:90%;
+	width:100%;
 }
 
 .container {
@@ -9,22 +9,23 @@ html {
 }
 body {
 	height:100%;
-	width:100%;
+	width:99%;
 	background-color:#e2ba6e;
     background-image:url("bg.jpg");
-    background-position:top;
+    background-position:top center;
     background-repeat:no-repeat;
-	margin:0;
+	margin-left:2px;
 	padding:0;
 }
 p {
 	font-family: "Bitter", serif;
 	font-size:12pt;
 	height:75%;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 15%;
+	margin-right: 15%;
+    text-align:left;
 	border: 0.2em solid #000000;
-	padding-right:10px;
+	padding-right:5px;
 	padding-left:10px;
 	padding-top:5px;
 	padding-bottom:20px;
@@ -35,7 +36,7 @@ h {
 	font-family: "Bitter", serif;
 	font-size:24px;
 	font-style:underline;
-	margin-left: 10%;
+	margin-left: 15%;
 	margin-right: 10%;
 }
 t {
@@ -101,7 +102,7 @@ ft {
 }
 
 .ribbon a:hover span {
-    background:#c1cc3c;
+    background:#e2ba6e;
     margin-top:0;
 }
 
