@@ -3,17 +3,17 @@ window.projectsBoxDrawn = 0;
 function aboutMeHandler() {
     if(window.aboutMeBoxDrawn)
         return;
-    
+
     var aboutMeHead = document.createElement('h');
     aboutMeHead.innerHTML = "About Me";
     aboutMeHead.setAttribute('style', "display: inline");
     aboutMeHead.setAttribute('id', 'aboutmehead');
     document.getElementById('thecontainer').appendChild(aboutMeHead);
-    
+
     var imageHolder = document.createElement('div');
     imageHolder.setAttribute('id', "imageholder");
     imageHolder.setAttribute('style', "display: inline");
-    imageHolder.innerHTML = "<img src='ab.jpg' width=380px></img>";
+    imageHolder.innerHTML = "<img src='ab.png' width=200px></img>";
     document.getElementById('thecontainer').appendChild(imageHolder);
     
     var aboutMeContent = document.createElement('p');
@@ -24,8 +24,10 @@ function aboutMeHandler() {
 
     if(window.projectsBoxDrawn) {
     	document.getElementById('thecontainer').removeChild(document.getElementById('projectshead'));
-    	document.getElementById('thecontainer').removeChild(document.getElementById('projectscontent'));
+    	document.getElementById('thecontainer').removeChild(document.getElementById('projectscontent1'));
     	document.getElementById('thecontainer').removeChild(document.getElementById('projectssubhead1'));
+    	document.getElementById('thecontainer').removeChild(document.getElementById('projectscontent2'));
+    	document.getElementById('thecontainer').removeChild(document.getElementById('projectssubhead2'));
     	window.projectsBoxDrawn = 0;
     }
 
@@ -44,16 +46,28 @@ function projectsHandler() {
 	document.getElementById('thecontainer').appendChild(projectsHead);
 
 	var projectsSubHead1 = document.createElement('sh');
-	projectsSubHead1.innerHTML = "<a href='http://roadbuilder.abarghi.com'>RoadBuilder</a>";
+	projectsSubHead1.innerHTML = "<a href='http://github.com/bgamer50/roadbuilder'>RoadBuilder</a>";
 	projectsSubHead1.setAttribute('style', "display: inline");
 	projectsSubHead1.setAttribute('id', 'projectssubhead1');
 	document.getElementById('thecontainer').appendChild(projectsSubHead1);
 
-	var projectsContent = document.createElement('p');
-	projectsContent.setAttribute('id', 'projectscontent');
-	projectsContent.innerHTML =
+	var projectsContent1 = document.createElement('p');
+	projectsContent1.setAttribute('id', 'projectscontent1');
+	projectsContent1.innerHTML =
 		"RoadBuilder is a road network simulator I developed as a research student at TJHSST.  Its source is available on GitHub.";
-	document.getElementById('thecontainer').appendChild(projectsContent);
+	document.getElementById('thecontainer').appendChild(projectsContent1);
+
+	var projectsSubHead2 = document.createElement('sh');
+	projectsSubHead2.innerHTML = "<a href='http://github.com/bgamer50/numtheory'>Numtheory</a>";
+	projectsSubHead2.setAttribute('style', "display:inline");
+	projectsSubHead2.setAttribute('id', 'projectssubhead2');
+	document.getElementById('thecontainer').appendChild(projectsSubHead2);
+
+	var projectsContent2 = document.createElement('p');
+	projectsContent2.setAttribute('id', 'projectscontent2');
+	projectsContent2.innerHTML = 
+		"Numtheory is a library of elementary number theory functions for Python.  It also includes the C equivalents of those functions.  Its source is available on GitHub.";
+	document.getElementById('thecontainer').appendChild(projectsContent2);
 
 	if(window.aboutMeBoxDrawn == 1) {
 		document.getElementById('thecontainer').removeChild(document.getElementById('aboutmehead'));
