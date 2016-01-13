@@ -28,6 +28,8 @@ function aboutMeHandler() {
     	document.getElementById('thecontainer').removeChild(document.getElementById('projectssubhead1'));
     	document.getElementById('thecontainer').removeChild(document.getElementById('projectscontent2'));
     	document.getElementById('thecontainer').removeChild(document.getElementById('projectssubhead2'));
+    	document.getElementById('thecontainer').removeChild(document.getElementById('projectscontent3'));
+    	document.getElementById('thecontainer').removeChild(document.getElementById('projectssubhead3'));
     	window.projectsBoxDrawn = 0;
     }
 
@@ -68,6 +70,18 @@ function projectsHandler() {
 	projectsContent2.innerHTML = 
 		"Numtheory is a library of elementary number theory functions for Python.  It also includes the C equivalents of those functions.  Its source is available on GitHub.";
 	document.getElementById('thecontainer').appendChild(projectsContent2);
+
+	var projectsSubHead3 = document.createElement('sh');
+	projectsSubHead3.innerHTML = "<a href='http://github.com/bgamer50/website'>Website</a>";
+	projectsSubHead3.setAttribute('style', "display: inline");
+	projectsSubHead3.setAttribute('id', 'projectssubhead3');
+	document.getElementById('thecontainer').appendChild(projectsSubHead3);
+
+	var projectsContent3 = document.createElement('p');
+	projectsContent3.setAttribute('id', 'projectscontent3');
+	projectsContent3.innerHTML =
+		"The source code for this website is also on GitHub.";
+	document.getElementById('thecontainer').appendChild(projectsContent3);
 
 	if(window.aboutMeBoxDrawn == 1) {
 		document.getElementById('thecontainer').removeChild(document.getElementById('aboutmehead'));
